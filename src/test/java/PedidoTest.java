@@ -9,11 +9,11 @@ class PedidoTest {
     void deveRetornarPedidoSemInformacao() {
         try {
             Pedido pedido = new Pedido();
-            pedido.get();
+            pedido.getDescricaoPedido();
             fail();
         }
         catch (NullPointerException e) {
-            assertEquals("Disciplina sem ementa", e.getMessage());
+            assertEquals("Pedido sem informação", e.getMessage());
         }
     }
 
