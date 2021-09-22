@@ -1,7 +1,7 @@
 public class Encomenda extends Transportadora{
     private int notaFiscal;
 
-    public Encomenda(String descricao, int cargaHoraria) {
+    public Encomenda(String descricao, int notaFiscal) {
         super(descricao);
         this.notaFiscal = notaFiscal;
     }
